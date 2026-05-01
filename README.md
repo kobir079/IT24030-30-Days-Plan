@@ -647,3 +647,133 @@ public class Main { public static void main(String[] args) {
     obj.display();
 }
 }
+
+Date : 27/04/2025
+
+Day #09
+
+Topic : ArrayList + LinkedList, HashSet + HashMap
+
+Video : https://www.youtube.com/watch?v=TDHaeHAlPFg&list=PLSGubLIO9kuDMrAqU8bVQx4Zv-E-6AEnj&index=10
+
+Example #01
+
+import java.util.ArrayList; import java.util.List;
+
+public class IT24030 {
+
+public static void main(String[] args) {
+
+    List<String> fruits = new ArrayList<>();
+
+    fruits.add("Apple");
+    fruits.add("Banana");
+    fruits.add("Cherry");
+
+    System.out.println("Fruits: " + fruits);
+
+    String firstFruit = fruits.get(0);
+    System.out.println("First fruit: " + firstFruit);
+}
+}
+
+Example #02
+
+import java.util.*;
+
+public class IT24030 {
+
+public static void main(String[] args) {
+
+    // LinkedList
+    LinkedList<String> animals = new LinkedList<>();
+    animals.add("Dog");
+    animals.add("Cat");
+    animals.add("Elephant");
+
+    System.out.println("Animals: " + animals);
+
+    // HashSet
+    HashSet<String> colors = new HashSet<>();
+    colors.add("Red");
+    colors.add("Green");
+    colors.add("Blue");
+    colors.add("Red"); // duplicate
+
+    System.out.println("Colors: " + colors);
+
+    // HashMap
+    HashMap<String, Integer> ageMap = new HashMap<>();
+    ageMap.put("Alice", 30);
+    ageMap.put("Bob", 25);
+    ageMap.put("Charlie", 35);
+
+    System.out.println("Age Map: " + ageMap);
+
+    int age = ageMap.get("Alice");
+    System.out.println("Alice's Age: " + age);
+}
+}
+
+Date : 28/04/2025
+
+Day #10
+
+Topic : ArrayList Example, LinkedList Example
+
+
+Video : https://www.youtube.com/watch?v=q-5D9Z9BCVI&list=PLSGubLIO9kuDMrAqU8bVQx4Zv-E-6AEnj&index=12
+
+Example #01
+
+import java.util.ArrayList;
+
+public class IT24030 {
+
+public static void main(String[] args) {
+
+    // Create ArrayList
+    ArrayList<String> fruits = new ArrayList<>();
+
+    // Add elements
+    fruits.add("Apple");
+    fruits.add("Banana");
+    fruits.add("Cherry");
+
+    // Access element
+    System.out.println("First fruit: " + fruits.get(0));
+
+    // Remove element
+    fruits.remove("Banana");
+
+    // Print all elements
+    System.out.println("Fruits List: " + fruits);
+}
+}
+
+Example #02
+
+import java.util.LinkedList;
+
+public class IT24030 {
+
+public static void main(String[] args) {
+
+    // Create LinkedList
+    LinkedList<String> colors = new LinkedList<>();
+
+    // Add elements
+    colors.add("Red");
+    colors.add("Green");
+    colors.add("Blue");
+
+    // Access element
+    System.out.println("First color: " + colors.get(0));
+
+    // Remove element
+    colors.remove("Green");
+
+    // Print all elements
+    System.out.println("Colors List: " + colors);
+}
+}
